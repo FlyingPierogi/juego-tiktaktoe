@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/juego-tiktaktoe/static/css/main.81604024.css",
-    "main.js": "/juego-tiktaktoe/static/js/main.b2a73743.js",
+    "main.css": "/juego-tiktaktoe/static/css/main.b2553c6e.css",
+    "main.js": "/juego-tiktaktoe/static/js/main.f85babe3.js",
     "static/media/bg-main.jpg": "/juego-tiktaktoe/static/media/bg-main.a2222745681bdad01cbd.jpg",
     "static/media/tnt.png": "/juego-tiktaktoe/static/media/tnt.fb375a6ee74a5ff20fb8.png",
     "static/media/cave.jpg": "/juego-tiktaktoe/static/media/cave.c132f739b69ce4d55018.jpg",
@@ -13,11 +13,11 @@
     "static/media/sword.png": "/juego-tiktaktoe/static/media/sword.ad86232a7aab62fc0088.png",
     "static/media/creeperFace.png": "/juego-tiktaktoe/static/media/creeperFace.cfdedd159a91708489f6.png",
     "index.html": "/juego-tiktaktoe/index.html",
-    "main.81604024.css.map": "/juego-tiktaktoe/static/css/main.81604024.css.map",
-    "main.b2a73743.js.map": "/juego-tiktaktoe/static/js/main.b2a73743.js.map"
+    "main.b2553c6e.css.map": "/juego-tiktaktoe/static/css/main.b2553c6e.css.map",
+    "main.f85babe3.js.map": "/juego-tiktaktoe/static/js/main.f85babe3.js.map"
   },
   "entrypoints": [
-    "static/css/main.81604024.css",
-    "static/js/main.b2a73743.js"
+    "static/css/main.b2553c6e.css",
+    "static/js/main.f85babe3.js"
   ]
 }
