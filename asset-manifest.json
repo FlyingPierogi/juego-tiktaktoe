@@ -1,13 +1,23 @@
 {
   "files": {
-    "main.css": "/juego-tiktaktoe/static/css/main.9c5c5444.css",
-    "main.js": "/juego-tiktaktoe/static/js/main.909508c9.js",
+    "main.css": "/juego-tiktaktoe/static/css/main.3cf82828.css",
+    "main.js": "/juego-tiktaktoe/static/js/main.b2a73743.js",
+    "static/media/bg-main.jpg": "/juego-tiktaktoe/static/media/bg-main.a2222745681bdad01cbd.jpg",
+    "static/media/tnt.png": "/juego-tiktaktoe/static/media/tnt.fb375a6ee74a5ff20fb8.png",
+    "static/media/cave.jpg": "/juego-tiktaktoe/static/media/cave.c132f739b69ce4d55018.jpg",
+    "static/media/creeperWins.png": "/juego-tiktaktoe/static/media/creeperWins.a8549bcd12ead1a309c9.png",
+    "static/media/steve-wins.png": "/juego-tiktaktoe/static/media/steve-wins.8319b2e1eea09c057feb.png",
+    "static/media/creeperTurn.png": "/juego-tiktaktoe/static/media/creeperTurn.57310346565bfcc2517b.png",
+    "static/media/steveTurn.png": "/juego-tiktaktoe/static/media/steveTurn.2fcc0f496b5831716f47.png",
+    "static/media/stevexcreeper.jpg": "/juego-tiktaktoe/static/media/stevexcreeper.9f110e02158a7c9c3946.jpg",
+    "static/media/sword.png": "/juego-tiktaktoe/static/media/sword.ad86232a7aab62fc0088.png",
+    "static/media/creeperFace.png": "/juego-tiktaktoe/static/media/creeperFace.cfdedd159a91708489f6.png",
     "index.html": "/juego-tiktaktoe/index.html",
-    "main.9c5c5444.css.map": "/juego-tiktaktoe/static/css/main.9c5c5444.css.map",
-    "main.909508c9.js.map": "/juego-tiktaktoe/static/js/main.909508c9.js.map"
+    "main.3cf82828.css.map": "/juego-tiktaktoe/static/css/main.3cf82828.css.map",
+    "main.b2a73743.js.map": "/juego-tiktaktoe/static/js/main.b2a73743.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c5c5444.css",
-    "static/js/main.909508c9.js"
+    "static/css/main.3cf82828.css",
+    "static/js/main.b2a73743.js"
   ]
 }
