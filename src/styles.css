@@ -4,8 +4,13 @@
 
 body {
   font-family: sans-serif;
-  margin: 20px;
+  height: 100vh;
+  width: 100%;
   padding: 0;
+  margin: 0;
+  background: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
 }
 
 h1 {
@@ -46,29 +51,61 @@ ul {
   padding-inline-start: 20px;
 }
 
-* {
-  box-sizing: border-box;
+.button-start{
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+  background-color: #ccb400;
+  padding: 10px 30px;
+  border: solid #4bcc00 2px;
+  box-shadow: none;
+  border-radius: 50px;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 47%;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
+.button-start:hover{
+  
+  background-color: #fff;
+  color: #08642e;
+  border: none;
+}
+
+.player-faces{
+  position: fixed;
+  background: #585353;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+  border: 10px solid #999;
+  font-size: 220px;
+  font-weight: bold;
+  text-align: center;
+  width: 90%;
+  height: 95vh;
+  bottom: 2%;
+  right:5%;
+  z-index: 100;
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #000000;
   float: left;
-  font-size: 24px;
+  font-size: 220px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 260px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 260px;
 }
 
 .board-row:after {
@@ -77,14 +114,231 @@ body {
   display: table;
 }
 
-.status {
-  margin-bottom: 10px;
-}
-.game {
+.grid-game{
   display: flex;
-  flex-direction: row;
 }
 
-.game-info {
-  margin-left: 20px;
+.board{
+  width: 55%;
+  padding: 105px 0px 105px 125px;
+
 }
+
+.player-info{
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 20px;
+  border-style: double;
+  border-radius: 25px;
+  margin: 75px; 
+  overflow: hidden;
+}
+
+.status {
+  width:100%;
+  padding: 20px 15px 25px 15px;
+  text-align: center;
+  font-size: 80px;
+}
+
+.status-image{
+  width: 100%;
+  height: 60vh;
+  background: no-repeat;
+  background-size: contain;
+}
+
+.button-restart{
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+  background-color: #d4941ba0;
+  padding: 10px 30px;
+  border: solid #000000 2px;
+  box-shadow: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.center-div{
+  width: 100%;
+  height: 20%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Large desktop /////////////////////////////////////////////////////////////////////// MEDIA
+@media (min-width: 1200px) { ... }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+  .button-start{
+    background-color: #0e0e0dc7;
+    left:43%;
+  }
+
+  .player-faces{
+    width: 90%;
+    height: 95vh;
+    bottom: 7%;
+    right:7%;
+  }
+
+  .grid-game{
+    display:block;
+  }
+
+  .board{
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+  
+  }
+
+  .player-info{
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .square {
+    width: 30%;
+  }
+
+  .status {
+    padding: 10px;
+    font-size: 35px;
+  }
+  
+  .status-image{
+    width: 100%;
+    height: 65%;
+    background-position: center;
+    background-size:contain;
+    margin:0;
+  }
+
+  .button-restart{
+    top: 90%;
+    left: 30%;
+    display: block;
+    padding: 8px 30px;
+  }
+ 
+ } 
+ 
+/*Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+.button-start{
+    background-color: #0e0e0dc7;
+    left: 33%;
+  }
+
+  .player-faces{
+    width: 90%;
+    height: 95vh;
+    bottom: 7%;
+    right:7%;
+  }
+
+  .grid-game{
+    display:block;
+  }
+
+  .board{
+    width: 100%;
+    padding: 35px;
+    margin-left: 7px;
+  
+  }
+
+  .player-info{
+    width: 100%;
+    border: 10px;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+
+  .square {
+    width: 105px;
+    height: 105px;
+  }
+
+  .status {
+    padding: 20px 15px 25px 15px;
+    font-size: 35px;
+  }
+  
+  .status-image{
+    width: auto;
+    height:260px;
+    background-position: center;
+    
+  }
+
+  .button-restart{
+    top: 90%;
+    left: 30%;
+    padding: 8px 30px;
+  }
+ }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {  /*iphone12 pro*/
+
+  .button-start{
+    background-color: #0e0e0dc7;
+    left: 33%;
+  }
+
+  .player-faces{
+    width: 90%;
+    height: 95vh;
+    bottom: 7%;
+    right:7%;
+  }
+
+  .grid-game{
+    display:block;
+  }
+
+  .board{
+    width: 100%;
+    padding: 10px;
+    margin-left: 5%;
+  
+  }
+
+  .player-info{
+    width: 100%;
+    height: 47vh;
+    overflow: hidden;
+  }
+
+  .square {
+    width: 30%;
+  }
+
+  .status {
+    padding: 10px;
+    font-size: 35px;
+  }
+  
+  .status-image{
+    width: 100%;
+    height: 65%;
+    background-position: center;
+    background-size:contain;
+    margin:0;
+  }
+
+  .button-restart{
+    top: 90%;
+    left: 30%;
+    display: block;
+    padding: 8px 30px;
+  }
+ }
