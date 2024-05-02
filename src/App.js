@@ -29,7 +29,6 @@ function Board() {
   useEffect(() => {
     if (gameStarted === 0) {
       const newPlayerFaces = xIsNext ? steveFace : creeperFace;
-      //document.body.style.background="#fff";
       setPlayerFaces(newPlayerFaces);
       setGameStarted(1);
       setTimeout(() => {
@@ -179,7 +178,9 @@ export default function StartGame() {
       {gameStarted ? (
         <Board />
       ) : (
+        <div className="button-start-container">
         <button className="button-start" onClick={handleClickStart}>START</button>
+        </div>
       )}
     </>
   );
